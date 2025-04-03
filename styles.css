@@ -8,10 +8,9 @@
   --primary-color: #1e1e1e;
   --secondary-color: #ffffff;
   --tertiary-color: #117eeb;
-  --highlight-color: #f39c12;
   --link-underline-color: rgba(0, 0, 0, 0.2);
   --font-family: 'Open Sans', Arial, sans-serif;
-  --background-color: #626262;
+  --background-color: #b7b7b7;
 }
 
 body {
@@ -27,11 +26,15 @@ body {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   padding: 1rem;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-   border-bottom: 2px solid var(--link-underline-color);
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+  border-right: 2px solid var(--link-underline-color);
+  border-radius: 0;
 }
 
 #navbar header h1 {
@@ -42,23 +45,23 @@ body {
 
 #navbar ul {
   list-style: none;
-  display: flex;
-  justify-content: space-around;
   padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 #navbar ul li {
-  margin: 0 0.5rem;
-  position: relative;
+  margin: 1rem 0;
 }
 
 #navbar ul li a {
   color: var(--primary-color);
   text-decoration: none;
   font-weight: bold;
-  padding: 0.5rem 0;
-  display: inline-block;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding: 0.5rem 1rem;
+  display: block;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 #navbar ul li a::after {
@@ -72,7 +75,8 @@ body {
 }
 
 #navbar ul li a:hover {
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
+  background-color: var(--tertiary-color);
 }
 
 #navbar ul li a:hover::after {
@@ -80,9 +84,9 @@ body {
 }
 
 main {
+  margin-left: 270px;
   padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: calc(100% - 270px);
 }
 
 .main-section {
@@ -132,7 +136,7 @@ img {
 }
 
 footer {
-  background-color: var(--background-color);
+  background-color: var(--primary-color);
   color: var(--secondary-color);
   text-align: center;
   padding: 1rem;
