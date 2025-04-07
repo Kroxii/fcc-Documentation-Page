@@ -1,114 +1,246 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="styles.css" rel="stylesheet" />
-  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="manifest" href="site.webmanifest" />
-  <title class="title" id="title">PlayStation 2 Documentation</title>
-</head>
-<body>
-  <nav id="navbar">
-    <header>
-      <h1>Playstation 2</h1>
-    </header>
-    <ul>
-      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-      <li><a class="nav-link" href="#Hardware">Hardware</a></li>
-      <li><a class="nav-link" href="#Games">Games</a></li>
-      <li><a class="nav-link" href="#Legacy">Legacy</a></li>
-      <li><a class="nav-link" href="#Fun_Facts">Fun Facts</a></li>
-      <li><a class="nav-link" href="#Footer">Learn More</a></li>
-    </ul>
-  </nav>
-  <main id="main-doc">
-    <div id="introduction-div">
-      <section id="Introduction" class="main-section">
-        <header>
-          <h2>Introduction</h2>
-        </header>
-        <p>The PlayStation 2 (PS2) is a home video game console developed by Sony Computer Entertainment.</p>
-        <p>Released during the year 2000, it became one of the best-selling consoles of all time.</p>
-        <p>It was a revolutionary console for its time.</p>
-        <img src="C:\Users\Stagiaire\Desktop\école\Documentation\1815644-sony-ps2-noir-1-manette.webp" alt="PlayStation 2 Console" style="width:300px; height:auto;">
-      </section>
-    </div>
-    <div id="hardware-div">
-      <section id="Hardware" class="main-section">
-        <header>
-          <h2>Hardware</h2>
-        </header>
-        <p>The PS2 featured a 128-bit Emotion Engine CPU.</p>
-        <p>It also included DVD playback capabilities, which made it a popular choice for home entertainment.</p>
-        <p>Backward compatibility with PlayStation 1 games was a key feature of the PS2.</p>
-        <ul>
-          <li>The PlayStation 2's main central processing unit (CPU) is the 64-bit R5900-based "Emotion Engine", custom-designed by Sony and Toshiba.</li>
-          <li>GH-001 Motherboard</li>
-          <li>128-bit graphics</li>
-          <li>4MB eDRAM</li>
-          <li>4MB VRAM</li>
-          <li>8MB memory card</li>
-          <li>MIPS 34MHz second CPU for PS1 game emulation</li>
-        </ul>
-      </section>
-    </div>
-    <div id="games-div">
-      <section id="Games" class="main-section">
-        <header>
-          <h2>Games</h2>
-        </header>
-        <p>The PS2 had a massive library of games, including iconic titles like <code>Grand Theft Auto: San Andreas</code>.</p>
-        <p>Other popular games included <code>Final Fantasy X</code> and <code>Metal Gear Solid 3</code>.</p>
-        <p>Its diverse game library appealed to a wide range of players.</p>
-        <ul>
-          <li><code>Grand Theft Auto: San Andreas (Best selling game of the PS2)</code></li>
-          <li><code>Final Fantasy X</code></li>
-          <li><code>Metal Gear Solid 3</code></li>
-          <li><code>Kingdom Hearts</code></li>
-          <li><code>God of War</code></li>
-          <li><code>Gran Turismo 4</code></li>
-        </ul>
-      </section>
-    </div>
-    <div id="legacy-div">
-      <section id="Legacy" class="main-section">
-        <header>
-          <h2>Legacy</h2>
-        </header>
-        <p>The PS2's success paved the way for future PlayStation consoles, such as the <code>PlayStation 3</code>.</p>
-        <p>It remains a beloved system among gamers and collectors.</p>
-        <p>Its legacy continues to influence modern gaming, including the <code>PlayStation 5</code>.</p>
-        <ul>
-          <li><code>Best-selling console</code></li>
-          <li><code>Influenced future consoles</code></li>
-          <li><code>Beloved by collectors</code></li>
-          <li><code>Iconic game library</code></li>
-        </ul>
-      </section>
-    </div>
-    <div id="fun-facts-div">
-      <section id="Fun_Facts" class="main-section">
-        <header>
-          <h2>Fun Facts</h2>
-        </header>
-        <p>The PS2 sold over <code>155 million units</code> worldwide, making it the best-selling console of all time (second are the Nintendo DS with 156.1 million units sold).</p>
-        <p>It was the first console to support <code>DVDs</code>, which contributed to its popularity.</p>
-        <p>Production of the PS2 continued until <code>2013</code>, 13 years after its release.</p>
-        <p>Despite the fact the PS2’s been discontinued since 2013, no other gaming console has managed to top it—in fact, the next closest actively-sold consoles, the PS4 and Nintendo Switch, are each more than 40 million units behind.</p>
-        <ul>
-          <li><code>155 million units sold</code></li>
-          <li><code>First console with DVD support</code></li>
-          <li><code>Production lasted 13 years</code></li>
-        </ul>
-      </section>
-    </div>
-  </main>
-  <footer>
-    <p class="footer" id="Footer"><a href="https://www.playstation.com/en-us/playstation-history/2000-ps2-psp/">Learn more</a></p>
-  </footer>
-</body>
-</html>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #1e1e1e;
+  --secondary-color: #ffffff;
+  --tertiary-color: #117eeb;
+  --link-underline-color: rgba(0, 0, 0, 0.2);
+  --font-family: 'Open Sans', Arial, sans-serif;
+  --background-color: #b7b7b7;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  z-index: 1000;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+  border-right: 2px solid var(--link-underline-color);
+  border-radius: 0;
+}
+
+#navbar header h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#navbar ul li {
+  margin: 1rem 0;
+}
+
+#navbar ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  display: block;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#navbar ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--tertiary-color);
+  transition: width 0.3s ease;
+  margin: 0 auto;
+}
+
+#navbar ul li a:hover {
+  color: var(--secondary-color);
+  background-color: var(--tertiary-color);
+}
+
+#navbar ul li a:hover::after {
+  width: 100%;
+}
+
+main {
+  margin-left: 270px;
+  padding: 2rem;
+  max-width: calc(100% - 270px);
+}
+
+.main-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-section header h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--tertiary-color);
+  padding-bottom: 0.5rem;
+}
+
+.main-section p {
+  margin-bottom: 1rem;
+}
+
+.main-section ul {
+  list-style: disc;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.main-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+code {
+  background-color: #ecf0f1;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: var(--tertiary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  #navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  #navbar ul li {
+    margin: 0.5rem 0;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .main-section {
+    padding: 1rem;
+  }
+
+  #navbar header h1 {
+    font-size: 1.2rem;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0px;
+}
+
+h1, h2 {
+  color: var(--primary-color);
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--font-family);
+}
+
+#introduction-div {
+  margin: auto;
+  padding: 0px;
+  font-size: 1.1rem;
+  color: var(--primary-color); 
+  text-align: left;
+}
+
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
