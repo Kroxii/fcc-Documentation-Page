@@ -55,11 +55,23 @@ a:hover {
   display: block;
   padding: 10px;
   border-radius: 5px;
+  position: relative;
+  text-align: center;
 }
 
-#navbar a:hover {
+#navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
   background-color: var(--ps2-blue);
-  color: var(--white);
+  transition: width 0.3s ease;
+}
+
+#navbar a:hover::after {
+  width: 100%;
 }
 
 #main-doc {
