@@ -92,6 +92,12 @@ a:hover {
   border: 2px solid var(--ps2-blue);
   border-radius: 10px;
 }
+#spec-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
 
 footer {
   background-color: var(--dark-gray);
